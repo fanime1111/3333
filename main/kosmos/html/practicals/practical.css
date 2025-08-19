@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Orbitron:wght@400;700&display=swap');
+
+:root {
+    --primary-bg-color: #0c0c1d;
+    --secondary-bg-color: #1a1a3a;
+    --accent-color: #00aaff;
+    --glow-color: rgba(0, 170, 255, 0.5);
+    --text-color: #e0e0e0;
+    --title-color: #ffffff;
+    --subtle-border-color: rgba(255, 255, 255, 0.1);
+    --font-main: 'Roboto', sans-serif;
+    --font-title: 'Orbitron', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: var(--secondary-bg-color);
+    border-radius: 15px;
+    box-shadow: 0 0 25px var(--glow-color);
+    border: 1px solid var(--accent-color);
+    overflow: hidden;
+}
+
+.practical-header {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid var(--subtle-border-color);
+    background: linear-gradient(145deg, #1a1a3a, #0c0c1d);
+}
+
+.back-nav {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: var(--title-color);
+    text-shadow: 0 0 10px var(--glow-color);
+}
+
+.practical-title {
+    font-family: var(--font-title);
+    color: var(--title-color);
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 0 0 15px var(--glow-color);
+}
+
+.practical-subtitle {
+    color: var(--text-color);
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.practical-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.info-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.practical-content {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.section-title {
+    font-family: var(--font-title);
+    font-size: 1.8em;
+    color: var(--title-color);
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--subtle-border-color);
+    padding-bottom: 10px;
+}
+
+.objectives-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.objectives-list li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.objectives-list li::before {
+    content: '✨';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.theory-content p, .procedure-step p {
+    margin-bottom: 15px;
+}
+
+.formula-block {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.formula {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid var(--subtle-border-color);
+}
+
+.formula:last-child {
+    border-bottom: none;
+}
+
+.formula-name {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.formula-text {
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--primary-bg-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--title-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        overflow-x: hidden;
+    }
+    
+    .container {
+        margin: 0;
+        border-radius: 10px;
+    }
+    
+    .practical-header {
+        padding: 20px 15px;
+    }
+    
+    .practical-title {
+        font-size: 1.8em;
+        line-height: 1.2;
+    }
+    
+    .practical-subtitle {
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+    
+    .practical-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .practical-content {
+        padding: 15px;
+    }
+    
+    section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .section-title {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+    
+    /* ALL Images responsive */
+    img, .task-image, figure img, section img {
+        max-width: 100% !important;
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 10px auto;
+        border-radius: 8px;
+        object-fit: contain;
+    }
+    
+    figure, .figure {
+        margin: 15px 0;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    /* ALL Tables responsive */
+    table, .results-table table, .theory-section table, .tasks-section table {
+        width: 100% !important;
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+        font-size: 0.75em !important;
+        border-collapse: collapse;
+    }
+    
+    .results-table, .theory-section, .tasks-section {
+        overflow-x: auto;
+        margin: 15px 0;
+        border-radius: 8px;
+        width: 100%;
+    }
+    
+    th, td, .results-table th, .results-table td {
+        padding: 6px 4px !important;
+        font-size: 0.7em !important;
+        white-space: nowrap;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    th, .results-table th {
+        position: sticky;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.15) !important;
+        z-index: 10;
+        font-weight: bold;
+    }
+    
+    /* Table wrapper for horizontal scroll */
+    .results-table, div:has(table) {
+        overflow-x: auto;
+        overflow-y: visible;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Task blocks */
+    .task-block {
+        margin-bottom: 20px;
+    }
+    
+    .task-title {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+    
+    .task-list {
+        padding-left: 15px;
+    }
+    
+    .task-list li {
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+    
+    /* Formula blocks */
+    .formula-block {
+        padding: 10px;
+        margin: 15px 0;
+    }
+    
+    .formula-text {
+        font-size: 0.9em;
+        padding: 8px;
+        word-break: break-word;
+    }
+    
+    /* Equipment grid */
+    .equipment-grid { 
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    
+    /* ALL Text adjustments */
+    p, div, span, text {
+        font-size: 0.95em !important;
+        line-height: 1.5 !important;
+        margin-bottom: 12px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.3 !important;
+        word-wrap: break-word;
+        margin-bottom: 15px;
+    }
+    
+    ul, ol {
+        padding-left: 20px;
+        margin: 10px 0;
+    }
+    
+    li {
+        margin-bottom: 8px;
+        line-height: 1.4;
+        word-wrap: break-word;
+    }
+    
+    /* ALL Content containers */
+    .container, .practical-content, .theory-section, .tasks-section, .objectives-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 15px !important;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+    
+    /* ALL Blocks and sections */
+    section, div, .task-block, .formula-block {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    .practical-header {
+        padding: 15px 10px;
+    }
+    
+    .practical-title {
+        font-size: 1.5em;
+    }
+    
+    .practical-subtitle {
+        font-size: 1em;
+    }
+    
+    .practical-content {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .section-title {
+        font-size: 1.2em;
+    }
+    
+    /* Extra small tables - ALL tables */
+    table, th, td, .results-table th, .results-table td {
+        padding: 4px 2px !important;
+        font-size: 0.65em !important;
+        line-height: 1.2 !important;
+    }
+    
+    /* Smaller text - ALL text elements */
+    p, div, span, text {
+        font-size: 0.85em !important;
+        line-height: 1.4 !important;
+    }
+    
+    h1 { font-size: 1.3em !important; }
+    h2 { font-size: 1.2em !important; }
+    h3 { font-size: 1.1em !important; }
+    h4, .task-title { font-size: 1em !important; }
+    h5, h6 { font-size: 0.9em !important; }
+    
+    .formula-text {
+        font-size: 0.75em !important;
+        padding: 6px !important;
+    }
+    
+    /* Extra small images */
+    img, .task-image, figure img, section img {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 8px auto !important;
+    }
+    
+    /* Extra small containers */
+    .container, .practical-content, section, div {
+        padding: 8px !important;
+        margin: 5px 0 !important;
+    }
+}

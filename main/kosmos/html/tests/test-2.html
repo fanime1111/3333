@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- тест Луна спутник планет. Карликовые планеты. Малые тела солнечной системы -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест - Малые тела Солнечной системы</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+      /* Стили только для кнопок выбора варианта */
+      .switcher { gap: 8px; margin: 10px 0; display: flex; }
+      .switcher button {
+        padding: 10px 14px;
+        border: 1px solid #cbd5e1;
+        background: #f8fafc;
+        border-radius: 10px;
+        color: #0f172a;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .switcher button:hover { background: #eef2ff; }
+      .switcher button.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+      @media (max-width: 600px) {
+        .switcher { width: 100%; justify-content: space-between; }
+        .switcher button { flex: 1; }
+      }
+      .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="test-header">
+            <div class="back-nav">
+                <a href="../../main.html" class="back-btn">← Назад к астрономии</a>
+            </div>
+            <h1 class="test-title">Малые тела Солнечной системы</h1>
+            <h2 class="test-subtitle">Дифференцированные задания и тест</h2>
+            <div class="switcher" role="tablist" aria-label="Выбор варианта">
+              <button id="btn-v1" class="active" aria-selected="true" role="tab">Вариант I</button>
+              <button id="btn-v2" aria-selected="false" role="tab">Вариант II</button>
+            </div>
+        </header>
+
+        <main class="test-content">
+            <section id="variant-1" aria-labelledby="btn-v1">
+                <h3 class="section-title">📋 Вариант I</h3>
+                <p><em>Дифференцированная форма контроля, на первом месте № варианта, на втором – сложность</em></p>
+                <div class="question-block">
+                    <div class="question-number">Вариант № 1-1</div>
+                    <ol>
+                        <li>Назовите три самых крупных астероида главного пояса астероидов и приведите их примерные размеры.</li>
+                        <li>Какие периодические кометы вы знаете? Каковы примерные их расстояния от Солнца?</li>
+                        <li>Можно ли наблюдать метеоры на Луне?</li>
+                        <li>Каков химический состав метеоритов?</li>
+                    </ol>
+                </div>
+                <div class="question-block">
+                    <div class="question-number">Вариант № 1-2</div>
+                    <ol>
+                        <li>Каково строение большинства комет? Каковы размеры хвостов комет и от чего эти размеры зависят</li>
+                        <li>Какой из известных астероидов удаляется от Солнца на наибольшее расстояние?</li>
+                        <li>Может ли комета, периодически возвращающаяся к Солнцу, вечно сохранять свой вид неизменным?</li>
+                        <li>Вычислите период обращения одной из самых короткопериодических комет - кометы Энке, если большая полуось ее орбиты 2,2 а.е.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="variant-2" class="hidden" aria-labelledby="btn-v2">
+                <h3 class="section-title">📋 Вариант II</h3>
+                <p><em>Дифференцированная форма контроля, на первом месте № варианта, на втором – сложность</em></p>
+                <div class="question-block">
+                    <div class="question-number">Вариант № 2-1</div>
+                    <ol>
+                        <li>Где находятся орбиты большинства астероидов?</li>
+                        <li>От каких причин зависит видимая угловая длина кометных хвостов? Как отличить при наблюдении комету без хвоста от обычной туманности?</li>
+                        <li>Почему на астероидах отсутствует атмосфера?</li>
+                        <li>Найти большую полуось кометы Галлея, период обращения которой 76 лет</li>
+                    </ol>
+                </div>
+                <div class="question-block">
+                    <div class="question-number">Вариант № 2-2</div>
+                    <ol>
+                        <li>Сколько в настоящее время зарегистрировано карликовых планет?</li>
+                        <li>Как объяснить колебания блеска астероидов?</li>
+                        <li>Назовите яркие метеорные потоки, которые можно наблюдать в средних широтах. Как они связаны с орбитами разрушившихся комет?</li>
+                        <li>Комета имеет период обращения 1000 лет. Найти её большую полуось. Что можно сказать о скорости кометы в афелии и в перигелии</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="section-title">📝 Тест</h3>
+                
+                <div class="question-block" data-question="1">
+                    <div class="question-number">Вопрос 1</div>
+                    <div class="question-text">Метеором называется явление, когда:</div>
+                    <ul class="answer-options">
+                        <li data-answer="a">А) Звезды падают на Землю</li>
+                        <li data-answer="b">Б) Камень падает на Землю</li>
+                        <li data-answer="c">В) Пылинки сгорают в воздухе</li>
+                        <li data-answer="d">Г) Молнии наблюдаются в воздухе</li>
+                        <li data-answer="e">Д) Пыль выбрасывается в атмосферу</li>
+                    </ul>
+                </div>
+
+                <div class="question-block" data-question="2">
+                    <div class="question-number">Вопрос 2</div>
+                    <div class="question-text">Из чего состоит ядро кометы?</div>
+                    <ul class="answer-options">
+                        <li data-answer="a">А) Изо льда и пыли</li>
+                        <li data-answer="b">Б) Из железа</li>
+                        <li data-answer="c">В) Из камней</li>
+                        <li data-answer="d">Г) Из раскаленных газов</li>
+                        <li data-answer="e">Д) Из водяного пара</li>
+                    </ul>
+                </div>
+
+                <div class="question-block" data-question="3">
+                    <div class="question-number">Вопрос 3</div>
+                    <div class="question-text">С какой наименьшей скоростью метеориты влетают в атмосферу Земли?</div>
+                    <ul class="answer-options">
+                        <li data-answer="a">А) 1 м/с</li>
+                        <li data-answer="b">Б) 1 км/с</li>
+                        <li data-answer="c">В) 11,2 км/с</li>
+                        <li data-answer="d">Г) 22,2 км/с</li>
+                        <li data-answer="e">Д) 70 км/с</li>
+                        <li data-answer="f">Е) 100 км/с</li>
+                    </ul>
+                </div>
+
+                <div class="question-block" data-question="4">
+                    <div class="question-number">Вопрос 4</div>
+                    <div class="question-text">С какой наибольшей скоростью метеорит может влететь в атмосферу Земли?</div>
+                    <ul class="answer-options">
+                        <li data-answer="a">А) 1 м/с</li>
+                        <li data-answer="b">Б) 1 км/с</li>
+                        <li data-answer="c">В) 11,2 км/с</li>
+                        <li data-answer="d">Г) 22,2 км/с</li>
+                        <li data-answer="e">Д) 70 км/с</li>
+                        <li data-answer="f">Е) 100 км/с</li>
+                    </ul>
+                </div>
+
+                <div class="question-block" data-question="5">
+                    <div class="question-number">Вопрос 5</div>
+                    <div class="question-text">Тунгусский метеорит называют загадочным потому, что:</div>
+                    <ul class="answer-options">
+                        <li data-answer="a">А) Метеорит был космическим кораблем марсиан</li>
+                        <li data-answer="b">Б) На месте падения не выявлено метеоритного кратера</li>
+                        <li data-answer="c">В) В атмосфере произошла вспышка, напоминавшая взрыв ядерной бомбы</li>
+                        <li data-answer="d">Г) Метеорит был глыбой льда</li>
+                        <li data-answer="e">Д) После падения метеорита над Европой наблюдалось загадочное сияние в атмосфере и ночью не было видно звезд</li>
+                    </ul>
+                </div>
+
+                <div class="question-block" data-question="6">
+                    <div class="question-number">Вопрос 6</div>
+                    <div class="question-text">Почему большинство астероидов имеют неправильную форму?</div>
+                </div>
+
+                <div class="question-block" data-question="7">
+                    <div class="question-number">Вопрос 7</div>
+                    <div class="question-text">Почему метеориты могут достигать поверхности Земли?</div>
+                </div>
+
+                <div class="question-block" data-question="8">
+                    <div class="question-number">Вопрос 8</div>
+                    <div class="question-text">Какое семейство астероидов может вызвать угрозу для Земли?</div>
+                </div>
+
+                <div class="question-block" data-question="9">
+                    <div class="question-number">Вопрос 9</div>
+                    <div class="question-text">Чем отличается метеор от метеорита?</div>
+                </div>
+
+                <div class="question-block" data-question="10">
+                    <div class="question-number">Вопрос 10</div>
+                    <div class="question-text">Хвост кометы обычно притягивается к Солнцу или отталкивается от него?</div>
+                </div>
+
+                <div class="question-block" data-question="11">
+                    <div class="question-number">Вопрос 11</div>
+                    <div class="question-text">Почему комета может изменить свою орбиту?</div>
+                </div>
+
+                <div class="question-block" data-question="12">
+                    <div class="question-number">Вопрос 12</div>
+                    <div class="question-text">Какой самый большой метеоритный кратер обнаружили на территории Украины?</div>
+                </div>
+
+                <div class="question-block" data-question="13">
+                    <div class="question-number">Вопрос 13</div>
+                    <div class="question-text">Вычислите свой вес на астероиде 1709 Украина, который имеет диаметр 20 км. Плотность астероида 3 г/см³.</div>
+                </div>
+                
+            </section>
+        </main>
+    </div>
+
+    <script>
+      (function () {
+        const v1 = document.getElementById('variant-1');
+        const v2 = document.getElementById('variant-2');
+        const b1 = document.getElementById('btn-v1');
+        const b2 = document.getElementById('btn-v2');
+
+        function show(which) {
+          const isFirst = which === 1;
+          v1.classList.toggle('hidden', !isFirst);
+          v2.classList.toggle('hidden', isFirst);
+          b1.classList.toggle('active', isFirst);
+          b2.classList.toggle('active', !isFirst);
+          b1.setAttribute('aria-selected', String(isFirst));
+          b2.setAttribute('aria-selected', String(!isFirst));
+        }
+
+        b1.addEventListener('click', () => show(1));
+        b2.addEventListener('click', () => show(2));
+      })();
+    </script>
+</body>
+</html>

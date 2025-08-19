@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!-- Законы Кеплера – законы движения небесных тел». -->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Тест по теме: Законы Кеплера</title>
+  <link rel="stylesheet" href="test.css" />
+  <style>
+    /* Стили только для кнопок выбора варианта */
+    .switcher { gap: 8px; margin: 10px 0; }
+    .switcher button {
+        
+      padding: 10px 14px;
+      border: 1px solid #cbd5e1;
+      background: #f8fafc;
+      border-radius: 10px;
+      color: #0f172a;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .switcher button:hover { background: #eef2ff; }
+    .switcher button.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+    @media (max-width: 600px) {
+      .switcher { width: 100%; justify-content: space-between; }
+      .switcher button { flex: 1; }
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="test-header">
+      <div class="back-nav">
+        <a href="../../main.html" class="back-btn">← Назад к астрономии</a>
+      </div>
+      <h1 class="test-title">Тест по теме: «Законы Кеплера – законы движения небесных тел»</h1>
+      <div class="switcher" role="tablist" aria-label="Выбор варианта">
+        <button id="btn-v1" class="active" aria-selected="true" role="tab">Вариант I</button>
+        <button id="btn-v2" aria-selected="false" role="tab">Вариант II</button>
+      </div>
+      <div class="hint">Выберите вариант, чтобы увидеть соответствующие вопросы.</div>
+    </header>
+
+    <main class="test-content">
+      <!-- Вариант I -->
+      <section id="variant-1" aria-labelledby="btn-v1">
+        <h3 class="section-title">Вариант I</h3>
+
+        <div class="question-block" data-question="1">
+          <div class="question-number">Вопрос 1</div>
+          <div class="question-text">Ближайшую к Солнцу точку орбиты называют…</div>
+          <ul class="answer-options">
+            <li>А) Афелием;</li>
+            <li>Б) Перигелием;</li>
+            <li>В) Эксцентриситетом.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="2">
+          <div class="question-number">Вопрос 2</div>
+          <div class="question-text">Ближайшая к Земле точка орбиты Луны или какого-нибудь искусственного спутника Земли называется…</div>
+          <ul class="answer-options">
+            <li>А) Перигелием;</li>
+            <li>Б) Апогеем;</li>
+            <li>В) Перигеем.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="3">
+          <div class="question-number">Вопрос 3</div>
+          <div class="question-text">Объясните с помощью закона Ньютона, почему спутники удерживаются на орбитах около своих планет.</div>
+          <ul class="answer-options">
+            <li>А) На своей орбите около планеты спутник удерживается вследствие сложения двух движений – прямолинейного движения по инерции и движения к планете, вызываемого ее притяжением.</li>
+            <li>Б) На своей орбите около планеты спутник удерживается вследствие прямолинейного движения по инерции.</li>
+            <li>В) На своей орбите около планеты спутник удерживается вследствие движения к планете, вызываемого ее притяжением.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="4">
+          <div class="question-number">Вопрос 4</div>
+          <div class="question-text">Приведите два факта, которые подтверждают аккреционную (аккреция – конденсация вещества) теорию образования Солнечной системы.</div>
+          <ul class="answer-options">
+            <li>А) Все планеты обращаются вокруг Солнца в одном и том же направлении. Орбиты всех планет лежат почти в плоскости эклиптики.</li>
+            <li>Б) Планеты гиганты обращаются вокруг Солнца в одном направлении, а планеты земной группы – в другом направлении.</li>
+            <li>В) Часть планеты Солнечной системы обращаются вокруг Солнца с запада на восток, а другая часть – наоборот. Орбиты всех планет лежат почти в плоскости эклиптики.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="5">
+          <div class="question-number">Вопрос 5</div>
+          <div class="question-text">Как меняется значение скорости движения планеты при ее перемещении от перигелия к афелию?</div>
+          <ul class="answer-options">
+            <li>А) Уменьшается согласно второму закону Кеплера: в перигелии она минимальна, а в афелии максимальна.</li>
+            <li>Б) Увеличивается согласно второму закону Кеплера: в перигелии она максимальна, а в афелии минимальна.</li>
+            <li>В) Уменьшается согласно второму закону Кеплера: в перигелии она максимальна, а в афелии минимальна.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="6">
+          <div class="question-number">Вопрос 6</div>
+          <div class="question-text">Почему движение планет происходит не в точности по законам Кеплера?</div>
+          <ul class="answer-options">
+            <li>А) В Солнечной системе не одна планета, а много, и каждая из них испытывает со стороны других возмущения.</li>
+            <li>Б) В Солнечной системе не одна планета, а много, и каждая из них движется петлеобразно.</li>
+            <li>В) В Солнечной системе не одна планета, а много, и каждая из них практически имеет несколько спутников.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="7">
+          <div class="question-number">Вопрос 7</div>
+          <div class="question-text">Как зависят периоды обращения спутников от массы планет?</div>
+          <ul class="answer-options">
+            <li>А) Чем меньше масса, тем меньше периоды спутников.</li>
+            <li>Б) Чем больше масса , тем больше периоды спутников.</li>
+            <li>В) Чем больше масса, тем меньше периоды спутников.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="8">
+          <div class="question-number">Вопрос 8</div>
+          <div class="question-text">Как далеко от Солнца находится планета, если ее орбитальный период составляет 8 лет?</div>
+          <ul class="answer-options">
+            <li>А) 3 а.е.</li>
+            <li>Б) 2 а.е.</li>
+            <li>В) 4 а.е.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="9">
+          <div class="question-number">Вопрос 9</div>
+          <div class="question-text">Большая полуось орбиты Марса 1,5 а.е. Чему равен звездный период его обращения вокруг Солнца?</div>
+          <ul class="answer-options">
+            <li>А) 29, 3 лет</li>
+            <li>Б) 18,65 года.</li>
+            <li>В) 1,86 года.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="10">
+          <div class="question-number">Вопрос 10</div>
+          <div class="question-text">Когда Земля (4 января) находится в перигелии, Солнце движется по небу с угловой скоростью 61' в сутки, а 4 июля, когда Земля в афелии, - 57' в сутки. Определите эксцентриситет земной орбиты.</div>
+        </div>
+      </section>
+
+      <!-- Вариант II -->
+      <section id="variant-2" class="hidden" aria-labelledby="btn-v2">
+        <h3 class="section-title">Вариант II</h3>
+
+        <div class="question-block" data-question="1">
+          <div class="question-number">Вопрос 1</div>
+          <div class="question-text">Наиболее удаленную к Солнцу точку называют…</div>
+          <ul class="answer-options">
+            <li>А) Афелием;</li>
+            <li>Б) Перигелием;</li>
+            <li>В) Эксцентриситетом.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="2">
+          <div class="question-number">Вопрос 2</div>
+          <div class="question-text">Наиболее удаленная к Земле точка орбиты Луны или какого-нибудь искусственного спутника Земли называется…</div>
+          <ul class="answer-options">
+            <li>А) Перигелием;</li>
+            <li>Б) Апогеем;</li>
+            <li>В) Перигеем.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="3">
+          <div class="question-number">Вопрос 3</div>
+          <div class="question-text">Что удерживает планеты на их орбитах вокруг Солнца?</div>
+          <ul class="answer-options">
+            <li>А) На орбитах вокруг Солнца планета удерживается вследствие сложения двух движений – прямолинейного движения по инерции и движения к планете, вызываемого ее притяжением.</li>
+            <li>Б) На орбитах вокруг Солнца планета удерживается вследствие сложения прямолинейного движения по инерции и движения по направлению к Солнцу под действием силы солнечного притяжения.</li>
+            <li>В) На своей орбите около Солнца планета удерживается вследствие прямолинейного движения по инерции.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="4">
+          <div class="question-number">Вопрос 4</div>
+          <div class="question-text">Как меняется значение скорости движения планеты при ее перемещении от афелия к перигелию?</div>
+          <ul class="answer-options">
+            <li>А) В афелии скорость планеты максимальная, затем она возрастает и в перигелии становится минимальной.</li>
+            <li>Б) В афелии скорость планеты минимальная, затем она возрастает и в перигелии становится максимальной.</li>
+            <li>В) В афелии скорость планеты минимальная, затем она возрастает и в перигелии становится равной нулю.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="5">
+          <div class="question-number">Вопрос 5</div>
+          <div class="question-text">Как происходит видимое движение планет?</div>
+          <ul class="answer-options">
+            <li>А) Планеты перемещаются петлеобразно.</li>
+            <li>Б) Планеты перемещаются по окружности.</li>
+            <li>В) Планеты перемещаются по эллипсу.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="6">
+          <div class="question-number">Вопрос 6</div>
+          <div class="question-text">В чем состояло уточнение Ньютоном третьего закона Кеплера?</div>
+          <ul class="answer-options">
+            <li>А) Во введении в формулу третьего закона Кеплера множителя, учитывающего суммарную массу Солнца и планеты.</li>
+            <li>Б) Во введении в формулу второго закона Кеплера множителя, учитывающего суммарную массу Солнца и планеты.</li>
+            <li>В) Во введении в формулу первого закона Кеплера множителя, учитывающего суммарную массу Солнца и планеты.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="7">
+          <div class="question-number">Вопрос 7</div>
+          <div class="question-text">При каких условиях движение небесных тел будет происходить в точности по законам Кеплера?</div>
+          <ul class="answer-options">
+            <li>А) Если в Солнечной системе одна планета.</li>
+            <li>Б) Если в Солнечной системе не одна планета, а много, и каждая из них испытывает со стороны других возмущения.</li>
+            <li>В) В случае, если существуют лишь два взаимно притягивающихся тела.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="8">
+          <div class="question-number">Вопрос 8</div>
+          <div class="question-text">Большая полуось орбиты Юпитера 5 а.е. Каков звездный период его обращения вокруг Солнца?</div>
+          <ul class="answer-options">
+            <li>А) 11,5 года</li>
+            <li>Б) 29,3 лет</li>
+            <li>В) 1,86 лет</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="9">
+          <div class="question-number">Вопрос 9</div>
+          <div class="question-text">Звездный период обращения Юпитера вокруг Солнца составляет 12 лет. Каково среднее расстояние Юпитера до Солнца?</div>
+          <ul class="answer-options">
+            <li>А) 5 а.е.</li>
+            <li>Б) 12,6 а.е.</li>
+            <li>В) 0,6 а.е.</li>
+          </ul>
+        </div>
+
+        <div class="question-block" data-question="10">
+          <div class="question-number">Вопрос 10</div>
+          <div class="question-text">Комета Галлея имеет эксцентриситет e = 0,967 и период обращения 76 лет. Определите большую полуось орбиты, перигельное и афельное расстояния кометы. Где расположен афелий кометы?</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      const v1 = document.getElementById('variant-1');
+      const v2 = document.getElementById('variant-2');
+      const b1 = document.getElementById('btn-v1');
+      const b2 = document.getElementById('btn-v2');
+
+      function show(which) {
+        const isFirst = which === 1;
+        v1.classList.toggle('hidden', !isFirst);
+        v2.classList.toggle('hidden', isFirst);
+        b1.classList.toggle('active', isFirst);
+        b2.classList.toggle('active', !isFirst);
+        b1.setAttribute('aria-selected', String(isFirst));
+        b2.setAttribute('aria-selected', String(!isFirst));
+        window.scrollTo({ top: document.querySelector('.test-header').offsetTop, behavior: 'smooth' });
+      }
+
+      b1.addEventListener('click', () => show(1));
+      b2.addEventListener('click', () => show(2));
+    })();
+  </script>
+</body>
+</html>
